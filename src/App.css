@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -14,19 +15,104 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: hsl(216, 12%, 8%);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
+.Card {
+  border-radius: 30px;
+  max-width: 330px;
+  max-height: 400px;
+  background-color: #1F2630;
+  padding: 25px;
+}
+
+.wrapper-text {
+  text-align: left;
+  font-size: medium;
+}
+
+.submitButton {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2ch;
+}
+.submitButton:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  cursor: pointer;
+}
+p {
+  color: #848B95;
+  font-size: 14.5px;
+}
+
+h2 {
+  color: #F9FAFC;
+}
+
+.circle {
+  background-color: #262E39;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #848B95;
+  font-size: medium;
+}
+#btn2:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+
+#btn2:focus {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+
+/* #card2 {
+  display: none;
+} */
 .App-link {
   color: #61dafb;
 }
+
+.rating-circles-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.RatingPill {
+  background-color: #262E39;
+  width: fit-content;
+  margin: 0 24%;
+  border-radius: 50px;
+}
+
+.Ratingtext {
+  color: hsl(25, 97%, 53%);
+  padding: 4px 20px;
+  font-size: 13px;
+}
+
 
 @keyframes App-logo-spin {
   from {

@@ -19,7 +19,7 @@ function App() {
             <div className = "circle">
               <img alt = "star" src = {starIcon}></img>
             </div>
-            <h2>How did we do?</h2>
+            <h1>How did we do?</h1>
             <p>
             Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!
@@ -45,7 +45,7 @@ function App() {
         <div className='RatingPill'>
             <p className='Ratingtext'>You selected {feedback} out of 5</p>
         </div>
-        <h2>Thank you!</h2>
+        <h1>Thank you!</h1>
           <p>
           We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!

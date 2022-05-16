@@ -59,8 +59,9 @@ p {
   line-height: 1.4rem;
 }
 
-h2 {
+h1 {
   color: #F9FAFC;
+  font-size: 25px;
 }
 
 .circle {

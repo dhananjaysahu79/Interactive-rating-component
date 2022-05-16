@@ -1,7 +1,7 @@
 import starIcon from './icon-star.svg';
 import thanks from './illustration-thank-you.svg';
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 function App() {
   const [isClicked, setClick] = useState(false);
   const [feedback, setFeedback] = useState(1);
@@ -11,13 +11,13 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <main className="App">
       <header className="App-header">
         {!isClicked ?
         <div className = "Card" id = 'card1'>
           <div className = "wrapper-text">
             <div className = "circle">
-              <img src = {starIcon}></img>
+              <img alt = "star" src = {starIcon}></img>
             </div>
             <h2>How did we do?</h2>
             <p>
@@ -28,7 +28,7 @@ function App() {
           <div className = "rating-circles-container">
              {
               [1,2,3,4,5].map((value) => 
-              <button className = "circle" id = 'btn2' onClick= {() => handleFeedback(value)} >
+              <button className = "circle2" onClick= {() => handleFeedback(value)} >
                 {value}
               </button>)
              }
@@ -41,7 +41,7 @@ function App() {
         :
 
         <div className = "Card" id = 'card2'>
-        <img src = {thanks}></img>
+        <img alt='thanks' src = {thanks}></img>
         <div className='RatingPill'>
             <p className='Ratingtext'>You selected {feedback} out of 5</p>
         </div>
@@ -53,7 +53,7 @@ function App() {
         </div>
       }
       </header>
-    </div>
+    </main>
   );
 }
 

@@ -26,10 +26,10 @@
 
 .Card {
   border-radius: 30px;
-  max-width: 330px;
+  max-width: 320px;
   max-height: 400px;
   background-color: #1F2630;
-  padding: 25px;
+  padding: 33px 25px;
 }
 
 .wrapper-text {
@@ -42,7 +42,7 @@
   border: none;
   width: 100%;
   border-radius: 20px;
-  padding: 10px;
+  padding: 12px;
   color: white;
   font-size: 0.85rem;
   font-weight: 700;
@@ -55,7 +55,8 @@
 }
 p {
   color: #848B95;
-  font-size: 14.5px;
+  font-size: 14px;
+  line-height: 1.4rem;
 }
 
 h2 {
@@ -74,13 +75,28 @@ h2 {
   color: #848B95;
   font-size: medium;
 }
-#btn2:hover {
+
+.circle2 {
+  background-color: #262E39;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #848B95;
+  font-size: medium;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.circle2:hover {
   background-color: hsl(25, 97%, 53%);
   color: white;
   cursor: pointer;
 }
 
-#btn2:focus {
+.circle2:focus {
   background-color: hsl(216, 12%, 54%);
   color: white;
 }
@@ -103,7 +119,7 @@ h2 {
 .RatingPill {
   background-color: #262E39;
   width: fit-content;
-  margin: 0 24%;
+  margin: 5% 23%;
   border-radius: 50px;
 }
 
